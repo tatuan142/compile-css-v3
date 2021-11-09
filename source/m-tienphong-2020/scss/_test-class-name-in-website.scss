@@ -1,0 +1,102 @@
+// ====================================
+// Mixins
+// ====================================
+/*
+* TOC
+*
+*/
+// >> no padding, no margin , no border
+// --------------
+// > DIRECTION  - 
+// --------------
+.top;
+.right;
+.bottom;
+.left;
+// ----------
+// > MIXIN  - 
+// ----------
+@mixin no-style-top;
+@mixin no-style-bottom;
+@mixin no-style-left;
+@mixin no-style-right;
+@mixin story-style-[number];
+@mixin story-vertical;
+@mixin story-left;
+@mixin story-right;
+// ---------------
+// > CLASS NAME  - 
+// ---------------
+// >> utility;
+.has-thumb-right;
+.has-thumb-left;
+// >> icon;
+.icon;
+.icon--[name];
+.icon--live;
+.icon--infographic;
+.icon--longform;
+.fa-video;
+.fa-photo;
+.fa-audio;
+// >> typo;
+.text-sapo-[number];
+.text-story-[number];
+.text-detail-[number];
+.text-box-[number];
+.text-abf-[number];
+// >> button;
+.btn-[zone]-[name];
+// >> page;
+.home-page;
+.category-page;
+.detail-page;
+.infographic-page;
+.longform-page;
+.live-page;
+.interview-page;
+.topic-page;
+.media-page;
+.video-page;
+.audio-page;
+.photo-page;
+// >> layout;
+.container;
+.[zone]-container;
+.wrap;
+.[zone]-wrap;
+// >> zone;
+.site-header;
+.site-container;
+.site-footer;
+// --
+.nav
+.desktop-nav;
+.mobile-nav;
+.first-nav;
+.second-nav;
+// --
+.breadcrumb;
+// --
+.fyi;
+.fyi-[direction];
+.top-banner;
+.middle-banner;
+.bottom-banner;
+.sidebar-banner;
+// --
+.no-img;
+// >> main-styles;
+// -  MIXIN, UTILITY of GLOBAL
+// -----  box-heading 
+.box-heading-[number];
+// -----  box-style
+.box-style-[number];
+// -----  slider
+.slider-style-[number];
+.slider-control;
+// -----  timeline
+.timeline-global;
+.timeline-[page];
+// -----  MIX
+// -----  special page

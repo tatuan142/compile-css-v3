@@ -1,0 +1,441 @@
+// > TOOL 
+.hidden {
+    display: none !important;
+}
+
+#__bs_notify__ {
+    display: none !important;
+}
+
+
+.location{
+    // display: none;
+}
+.channel-timeline {
+    display: none;
+}
+.follow-timeline {
+    display: none;
+}      
+/*===============*/
+
+// @if $dark-mode {
+//     background-color: theme-color-level(dark,-6);
+// }
+[class*="-color-"] {
+    width: 40px;
+    height: 80px;
+    margin-right: 5px;
+    float: left;
+}
+
+[class*="-color-basic"] {
+    width: 80px;
+}
+
+.light-color-12 {
+    background-color: theme-color-level(light, 12);
+}
+
+.light-color-11 {
+    background-color: theme-color-level(light, 11);
+}
+
+.light-color-10 {
+    background-color: theme-color-level(light, 10);
+}
+
+.light-color-9 {
+    background-color: theme-color-level(light, 9);
+}
+
+.light-color-8 {
+    background-color: theme-color-level(light, 8);
+}
+
+.light-color-7 {
+    background-color: theme-color-level(light, 7);
+}
+
+.light-color-6 {
+    background-color: theme-color-level(light, 6);
+}
+
+.light-color-5 {
+    background-color: theme-color-level(light, 5);
+}
+
+.light-color-4 {
+    background-color: theme-color-level(light, 4);
+}
+
+.light-color-3 {
+    background-color: theme-color-level(light, 3);
+}
+
+.light-color-2 {
+    background-color: theme-color-level(light, 2);
+}
+
+.light-color-1 {
+    background-color: theme-color-level(light, 1);
+}
+
+.light-color-basic {
+    background-color: theme-color-level(light, 0);
+    border: 1px solid theme-color-level(light, 6);
+}
+
+.light-color-n-1 {
+    background-color: theme-color-level(light, -1);
+}
+
+.light-color-n-2 {
+    background-color: theme-color-level(light, -2);
+}
+
+.light-color-n-3 {
+    background-color: theme-color-level(light, -3);
+}
+
+.light-color-n-4 {
+    background-color: theme-color-level(light, -4);
+}
+
+.light-color-n-5 {
+    background-color: theme-color-level(light, -5);
+}
+
+.light-color-n-6 {
+    background-color: theme-color-level(light, -6);
+}
+
+.light-color-n-7 {
+    background-color: theme-color-level(light, -7);
+}
+
+.light-color-n-8 {
+    background-color: theme-color-level(light, -8);
+}
+
+.light-color-n-9 {
+    background-color: theme-color-level(light, -9);
+}
+
+.light-color-n-10 {
+    background-color: theme-color-level(light, -10);
+}
+
+.light-color-n-11 {
+    background-color: theme-color-level(light, -11);
+}
+
+.light-color-n-12 {
+    background-color: theme-color-level(light, -12);
+}
+
+// ============================================================================
+.primary-color-12 {
+    background-color: theme-color-level(primary, 12);
+}
+
+.primary-color-11 {
+    background-color: theme-color-level(primary, 11);
+}
+
+.primary-color-10 {
+    background-color: theme-color-level(primary, 10);
+}
+
+.primary-color-9 {
+    background-color: theme-color-level(primary, 9);
+}
+
+.primary-color-8 {
+    background-color: theme-color-level(primary, 8);
+}
+
+.primary-color-7 {
+    background-color: theme-color-level(primary, 7);
+}
+
+.primary-color-6 {
+    background-color: theme-color-level(primary, 6);
+}
+
+.primary-color-5 {
+    background-color: theme-color-level(primary, 5);
+}
+
+.primary-color-4 {
+    background-color: theme-color-level(primary, 4);
+}
+
+.primary-color-3 {
+    background-color: theme-color-level(primary, 3);
+}
+
+.primary-color-2 {
+    background-color: theme-color-level(primary, 2);
+}
+
+.primary-color-1 {
+    background-color: theme-color-level(primary, 1);
+}
+
+.primary-color-basic {
+    background-color: theme-color-level(primary, 0);
+    border: 1px solid theme-color-level(primary, 6);
+}
+
+.primary-color-n-1 {
+    background-color: theme-color-level(primary, -1);
+}
+
+.primary-color-n-2 {
+    background-color: theme-color-level(primary, -2);
+}
+
+.primary-color-n-3 {
+    background-color: theme-color-level(primary, -3);
+}
+
+.primary-color-n-4 {
+    background-color: theme-color-level(primary, -4);
+}
+
+.primary-color-n-5 {
+    background-color: theme-color-level(primary, -5);
+}
+
+.primary-color-n-6 {
+    background-color: theme-color-level(primary, -6);
+}
+
+.primary-color-n-7 {
+    background-color: theme-color-level(primary, -7);
+}
+
+.primary-color-n-8 {
+    background-color: theme-color-level(primary, -8);
+}
+
+.primary-color-n-9 {
+    background-color: theme-color-level(primary, -9);
+}
+
+.primary-color-n-10 {
+    background-color: theme-color-level(primary, -10);
+}
+
+.primary-color-n-11 {
+    background-color: theme-color-level(primary, -11);
+}
+
+.primary-color-n-12 {
+    background-color: theme-color-level(primary, -12);
+}
+
+// ============================================================================
+.secondary-color-12 {
+    background-color: theme-color-level(secondary, 12);
+}
+
+.secondary-color-11 {
+    background-color: theme-color-level(secondary, 11);
+}
+
+.secondary-color-10 {
+    background-color: theme-color-level(secondary, 10);
+}
+
+.secondary-color-9 {
+    background-color: theme-color-level(secondary, 9);
+}
+
+.secondary-color-8 {
+    background-color: theme-color-level(secondary, 8);
+}
+
+.secondary-color-7 {
+    background-color: theme-color-level(secondary, 7);
+}
+
+.secondary-color-6 {
+    background-color: theme-color-level(secondary, 6);
+}
+
+.secondary-color-5 {
+    background-color: theme-color-level(secondary, 5);
+}
+
+.secondary-color-4 {
+    background-color: theme-color-level(secondary, 4);
+}
+
+.secondary-color-3 {
+    background-color: theme-color-level(secondary, 3);
+}
+
+.secondary-color-2 {
+    background-color: theme-color-level(secondary, 2);
+}
+
+.secondary-color-1 {
+    background-color: theme-color-level(secondary, 1);
+}
+
+.secondary-color-basic {
+    background-color: theme-color-level(secondary, 0);
+    border: 1px solid theme-color-level(secondary, 6);
+}
+
+.secondary-color-n-1 {
+    background-color: theme-color-level(secondary, -1);
+}
+
+.secondary-color-n-2 {
+    background-color: theme-color-level(secondary, -2);
+}
+
+.secondary-color-n-3 {
+    background-color: theme-color-level(secondary, -3);
+}
+
+.secondary-color-n-4 {
+    background-color: theme-color-level(secondary, -4);
+}
+
+.secondary-color-n-5 {
+    background-color: theme-color-level(secondary, -5);
+}
+
+.secondary-color-n-6 {
+    background-color: theme-color-level(secondary, -6);
+}
+
+.secondary-color-n-7 {
+    background-color: theme-color-level(secondary, -7);
+}
+
+.secondary-color-n-8 {
+    background-color: theme-color-level(secondary, -8);
+}
+
+.secondary-color-n-9 {
+    background-color: theme-color-level(secondary, -9);
+}
+
+.secondary-color-n-10 {
+    background-color: theme-color-level(secondary, -10);
+}
+
+.secondary-color-n-11 {
+    background-color: theme-color-level(secondary, -11);
+}
+
+.secondary-color-n-12 {
+    background-color: theme-color-level(secondary, -12);
+}
+
+// ============================================================================
+.third-color-12 {
+    background-color: theme-color-level(third, 12);
+}
+
+.third-color-11 {
+    background-color: theme-color-level(third, 11);
+}
+
+.third-color-10 {
+    background-color: theme-color-level(third, 10);
+}
+
+.third-color-9 {
+    background-color: theme-color-level(third, 9);
+}
+
+.third-color-8 {
+    background-color: theme-color-level(third, 8);
+}
+
+.third-color-7 {
+    background-color: theme-color-level(third, 7);
+}
+
+.third-color-6 {
+    background-color: theme-color-level(third, 6);
+}
+
+.third-color-5 {
+    background-color: theme-color-level(third, 5);
+}
+
+.third-color-4 {
+    background-color: theme-color-level(third, 4);
+}
+
+.third-color-3 {
+    background-color: theme-color-level(third, 3);
+}
+
+.third-color-2 {
+    background-color: theme-color-level(third, 2);
+}
+
+.third-color-1 {
+    background-color: theme-color-level(third, 1);
+}
+
+.third-color-basic {
+    background-color: theme-color-level(third, 0);
+    border: 1px solid theme-color-level(third, 6);
+}
+
+.third-color-n-1 {
+    background-color: theme-color-level(third, -1);
+}
+
+.third-color-n-2 {
+    background-color: theme-color-level(third, -2);
+}
+
+.third-color-n-3 {
+    background-color: theme-color-level(third, -3);
+}
+
+.third-color-n-4 {
+    background-color: theme-color-level(third, -4);
+}
+
+.third-color-n-5 {
+    background-color: theme-color-level(third, -5);
+}
+
+.third-color-n-6 {
+    background-color: theme-color-level(third, -6);
+}
+
+.third-color-n-7 {
+    background-color: theme-color-level(third, -7);
+}
+
+.third-color-n-8 {
+    background-color: theme-color-level(third, -8);
+}
+
+.third-color-n-9 {
+    background-color: theme-color-level(third, -9);
+}
+
+.third-color-n-10 {
+    background-color: theme-color-level(third, -10);
+}
+
+.third-color-n-11 {
+    background-color: theme-color-level(third, -11);
+}
+
+.third-color-n-12 {
+    background-color: theme-color-level(third, -12);
+}

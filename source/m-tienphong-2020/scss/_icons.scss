@@ -1,0 +1,221 @@
+// ====================================
+// Customize breadcrumbs
+// ====================================
+/*
+* TOC
+*
+* LOGO + LIVE ICON +
+* icon type
+*/
+// > LOGO + LIVE ICON + 
+[class^="icon"] {
+    background-image: url('../img/sprite-'+$sprite-version+'.png');
+    background-size: ($sprite-w + px) ($sprite-h + px);
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 0;
+}
+
+[class^="icon-live-"] {
+    width: 20px;
+    height: 20px;
+}
+
+// >  icon type 
+.fa-photo-video,
+.fa-camera-retro,
+.fa-microphone-alt {
+    color: $danger;
+    font-size: 0;
+
+    &:before {
+        font-size: 18px !important;
+    }
+}
+
+.icon {
+    &--status {
+        width: 18px;
+        height: 18px;
+        background-position: -50px -1550px;
+    }
+
+    &-longform {
+        // background-position: 0px -2050px;
+        // width: 20px;
+        // height: 30px;
+        // a:hover & {
+        //     background-position: -50px -2050px;
+        // }
+    }
+
+    &-photo {
+        background-position: 0px -2100px;
+        width: 18px;
+        height: 14px;
+
+        a:hover & {
+            background-position: -50px -2100px;
+        }
+    }
+
+    &-video {
+        background-position: 0px -2150px;
+        width: 18px;
+        height: 14px;
+
+        a:hover & {
+            background-position: -50px -2150px;
+        }
+    }
+
+    &-infographic {
+        background-position: 0px -2200px;
+        width: 18px;
+        height: 14px;
+
+        a:hover & {
+            background-position: -50px -2200px;
+        }
+    }
+
+    &-interview {
+        background-position: 0px -2250px;
+        width: 18px;
+        height: 14px;
+
+        a:hover & {
+            background-position: -50px -2250px;
+        }
+    }
+
+    &-quiz {
+        background-position: 0px -2300px;
+        width: 18px;
+        height: 14px;
+
+        a:hover & {
+            background-position: -50px -2300px;
+        }
+    }
+
+    &-live {
+        background: #fff url(../img/logo-LIVE_2.gif) 0 0/auto 12px no-repeat;
+        width: 26px;
+        height: 12px;
+    }
+
+    &-audio {
+        background-position: 0px -2400px;
+        width: 18px;
+        height: 14px;
+
+        a:hover & {
+            background-position: -50px -2400px;
+        }
+    }
+
+    &-live-text {
+        background-position: 0px -0px;
+    }
+
+    &-live-mobile {
+        background-position: 0px -50px;
+    }
+
+    &-live-quote {
+        background-position: 0px -100px;
+    }
+
+    &-live-facbook {
+        background-position: 0px -150px;
+    }
+
+    &-live-twitter {
+        background-position: 0px -200px;
+    }
+
+    &-live-email {
+        background-position: 0px -250px;
+    }
+
+    &-live-video {
+        background-position: 0px -300px;
+    }
+
+    &-live-photo {
+        background-position: 0px -350px;
+    }
+
+    &-live-goal {
+        background-position: 0px -400px;
+    }
+
+    &-live-corner {
+        background-position: 0px -450px;
+    }
+
+    &-live-yellowcard {
+        background-position: 0px -500px;
+    }
+
+    &-live-redcard {
+        background-position: 0px -550px;
+    }
+
+    &-live-exchange {
+        background-position: 0px -600px;
+    }
+
+    &-live-start {
+        background-position: 0px -650px;
+    }
+
+    &-live-tatic {
+        background-position: 0px -700px;
+    }
+
+    &-live-stadium {
+        background-position: 0px -750px;
+    }
+
+    &-live-time {
+        background-position: 0px -800px;
+    }
+
+    &-live-fault {
+        background-position: 0px -850px;
+    }
+
+    &-live-injure {
+        background-position: 0px -900px;
+    }
+
+    &-live-penalty {
+        background-position: 0px -950px;
+    }
+
+    &-live-var {
+        background-position: 0px -1000px;
+    }
+}
+
+.zalo-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 0;
+    background-image: url('../img/sprite-'+$sprite-version+'.png');
+    background-size: ($sprite-w + px) ($sprite-h + px);
+    background-position: 0px -1900px;
+}
+
+.zalo-icon-30 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 0;
+    background-image: url('../img/sprite-'+$sprite-version+'.png');
+    background-size: ($sprite-w + px) ($sprite-h + px);
+    background-position: 0px -1950px;
+}

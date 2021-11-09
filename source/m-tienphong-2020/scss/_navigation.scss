@@ -1,0 +1,159 @@
+// ====================================
+// Customize scaffolding
+// ====================================
+/*
+* TOC
+*
+* main navigation
+*/
+// > mobile 
+.mobile-menu {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -110%;
+    z-index: 110;
+    height: calc(100% - 40px);
+    padding-top: 50px;
+    width: 100%;
+    overflow: scroll;
+
+    .header-search {
+        margin-top: 10px;
+        width: 100%;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border: 1px solid rgba($gray-700, .3);
+        background-color: #fff;
+        transition: all .3s linear;
+
+        input {
+            width: 100%;
+            border: none;
+            transition: all .3s linear;
+            font-size: 12px;
+            color: $primary;
+            padding-left: 10px;
+
+            &::placeholder {
+                color: $gray-700;
+            }
+
+            &:hover {
+                background-color: white;
+            }
+        }
+
+        button.search {
+            position: absolute;
+            top: -1px;
+            bottom: -0px;
+            right: -1px;
+            width: 32px;
+            height: 32px;
+            border: none;
+            background-color: $primary;
+
+            i {
+                font-size: 15px;
+                color: #fff;
+                transition: all .3s linear;
+            }
+        }
+    }
+
+    .menu {
+        width: 100%;
+
+        >li {
+            border-top: 1px solid $gray-300;
+            position: relative;
+
+            >a {
+                display: flex;
+                align-items: center;
+                padding: 8px 0 8px;
+                position: relative;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: $font-weight-bolder;
+                font-family: $font-family-serif;
+            }
+
+            >i {
+                font-size: 20px;
+                width: 30px;
+                height: 38px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 10;
+
+                &[aria-expanded="true"] {
+                    &:before {
+                        content: "\f107";
+                    }
+                }
+            }
+
+            &:first-child {
+                border-top: none;
+            }
+        }
+
+        .menu__sub {
+            padding-left: 20px;
+            display: none;
+
+            &.show {
+                display: block;
+            }
+
+            li {
+                border-top: 1px solid $gray-200;
+
+                &:first-child {}
+            }
+
+            a {
+                display: flex;
+                padding: 12px 0 8px;
+                position: relative;
+                font-size: 14px;
+                font-weight: $font-weight-medium;
+            }
+        }
+    }
+
+    &.no-padding-top {
+        padding-top: 0;
+    }
+
+    &.show {
+        left: 0;
+    }
+}
+
+.latest-sticky {
+    background-color: #fff;
+    position: fixed;
+    top: 110%;
+    z-index: 110;
+    height: calc(100% - 40px);
+    padding-top: 50px;
+    width: 100%;
+    overflow: scroll;
+
+    &.no-padding-top {
+        padding-top: 0;
+    }
+
+    &.show {
+        top: 0;
+    }
+}

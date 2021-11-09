@@ -1,0 +1,89 @@
+/*! TNCK.1.0.0.css:*/
+/* > utilities */
+/* > root */
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/functions";
+@import "variables";
+@import "mixins/font-style";
+@import "mixins/story-image";
+@import "mixins/no-padding-margin-border";
+@import "mixins/audio-player";
+/* > font-awesome*/
+@import "../../../../old-cms/fontawesome-pro-5.11.2-web/scss/fontawesome.scss";
+@import "../../../../old-cms/fontawesome-pro-5.11.2-web/scss/solid.scss";
+@import "../../../../old-cms/fontawesome-pro-5.11.2-web/scss/regular.scss";
+@import "../../../../old-cms/fontawesome-pro-5.11.2-web/scss/light.scss";
+@import "../../../../old-cms/fontawesome-pro-5.11.2-web/scss/brands.scss";
+// > bootstrap
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/variables";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/mixins";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/root";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/reboot";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/type";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/images";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/code";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/grid";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/tables";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/forms";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/buttons";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/transitions";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/dropdown";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/button-group";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/input-group";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/custom-forms";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/nav";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/navbar";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/card";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/breadcrumb";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/pagination";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/badge";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/jumbotron";k
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/alert";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/progress";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/media";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/list-group";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/close";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/modal";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/tooltip";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/popover";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/carousel";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/print";
+// -------
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/align";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/background";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/borders";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/clearfix";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/display";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/embed";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/flex";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/float";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/position";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/screenreaders";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/shadows";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/sizing";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/spacing";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/text";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/utilities/visibility";
+
+// > content
+@import "fonts";
+@import "icons";
+@import "type";
+@import "button";
+// @import "m-audio-player.scss";
+
+/* > components */
+@import "layout";
+@import "header";
+@import "footer";
+@import "navigation";
+@import "pagination";
+@import "breadcrumb";
+@import "fyi";
+@import "story";
+@import "styles";
+@import "article";
+
+// > elements
+// @import "photoswipe/main.scss";
+// @import "photoswipe/default-skin.scss";

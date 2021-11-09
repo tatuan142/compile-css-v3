@@ -1,0 +1,407 @@
+@import "../../../../../bower_components/bootstrap-4.1.2/scss/functions";
+@import "_variables.scss";
+@import "../../../../../bower_components/bootstrap-4.1.2/scss/mixins";
+// > OPTIONAL
+// note : add when there no normalize style
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/root";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/reboot";
+@import "type";
+
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/buttons";
+.btn-primary {
+    color: #fff;
+    background-color: #CE2E0E;
+    border-color: #CE2E0E;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+
+    &:hover {
+        color: #fff;
+        background-color: #aa260c;
+        border-color: #9e230b
+    }
+
+    &:focus,
+    &.focus {
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 .2rem rgba(206, 46, 14, 0.5)
+    }
+
+    &.disabled,
+    &:disabled {
+        color: #fff;
+        background-color: #CE2E0E;
+        border-color: #CE2E0E
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    .show>&.dropdown-toggle {
+        color: #fff;
+        background-color: #9e230b;
+        border-color: #92210a
+    }
+
+    &:not(:disabled):not(.disabled):active:focus,
+    &:not(:disabled):not(.disabled).active:focus,
+    .show>&.dropdown-toggle:focus {
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 .2rem rgba(206, 46, 14, 0.5)
+    }
+}
+
+// > COMMENT
+.box-comment {
+    margin-top: $spacer-5;
+
+    .box-heading {
+        @include text-hero-2;
+        text-transform: uppercase;
+    }
+
+    .box-content {
+        margin-top: $spacer-3;
+
+        >.input {
+            @include clearfix();
+
+            textarea {
+                height: 60px;
+                padding: $spacer-1 $spacer-2;
+            }
+
+            .note {
+                color: $gray-600;
+                margin-top: $spacer-0;
+                display: none;
+            }
+
+            .btnSubmit {
+                @extend .btn-primary;
+                background-color: #fff;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                color: $primary;
+                width: 150px;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                font-weight: $font-weight-bold;
+                text-transform: uppercase;
+                margin-left: auto;
+                border-radius: 3px;
+            }
+
+            .login-path {
+                color: $gray-600;
+                display: flex;
+                align-items: center;
+                flex-flow: wrap column;
+                display: none;
+
+                >* {
+                    margin-right: $spacer-1;
+                }
+
+                >a {
+                    color: $secondary;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        >.user {
+            margin-top: $spacer-3;
+
+            .avatar-comment {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #7ed321;
+                display: none;
+
+                i {
+                    font-size: 14px;
+                    color: #fff;
+                }
+            }
+
+            .content-comment {
+                margin-left: auto;
+                width: calc(100%);
+
+                .info-author {
+                    @include text-heading-3;
+                    color: $primary;
+
+                    span {
+                        font-weight: 300;
+                        font-size: 14px;
+                    }
+                }
+
+                .text {
+                    @include text-regular-1;
+                    color: $gray-700;
+                }
+            }
+
+            >button {
+                position: relative;
+                font-weight: $font-weight-semibold;
+                @include caret(down);
+                width: 240px;
+                margin: 0 auto;
+                display: block;
+                color: $primary;
+            }
+        }
+
+        .inner-comment {
+            border-top: 1px dotted #dedede;
+            @include clearfix();
+
+        }
+
+        .topic-comment {
+            display: flex;
+            padding: $spacer-2 0;
+            flex-flow: wrap row;
+            justify-content: space-between;
+            @include clearfix();
+        }
+
+        .sub-comment {
+            @include clearfix();
+            margin-left: 44px;
+            padding: $spacer-2 0;
+            border-top: 1px dotted #dedede;
+
+            .comment {
+                display: flex;
+                justify-content: flex-start;
+                flex-flow: row wrap;
+            }
+
+            .content {
+                width: calc(100%);
+            }
+        }
+
+        .action-comment {
+            margin-top: $spacer-0;
+
+            a {
+                color: #3B5998;
+                font-weight: 400;
+                display: inline-block;
+                margin-right: 15px;
+
+                &.cmt-like-ed {
+                    color: #999;
+                }
+            }
+
+            i {
+                font-size: 13px;
+                margin-right: 5px;
+            }
+        }
+
+        .action-comment-reply {
+            margin-top: $spacer-1;
+
+            textarea {
+                width: 100%;
+                height: 75px;
+            }
+
+            .btnSubmit {
+                margin-top: $spacer-3;
+                @extend .btn-primary;
+                background-color: #fff;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                color: $primary;
+                width: 120px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                font-weight: $font-weight-bold;
+                text-transform: uppercase;
+                margin-left: auto;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+// > MODAL
+#modal-content>div>label {
+    width: 50%;
+    float: left
+}
+
+#dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 9999999;
+    display: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    -box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+
+    >div {
+        max-width: 600px;
+        width: 80%;
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        overflow: hidden;
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .4)
+    }
+
+    .header {
+        font-size: 1em;
+        line-height: 1.4;
+        text-transform: uppercase;
+        padding: $spacer-1 $spacer-3;
+        background: #CE2E0E;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .content {
+        padding: 20px 15px;
+        @include text-regular-2;
+        line-height: 1.4;
+
+        >div,
+        >form {
+            width: 100%;
+            margin-top: 5px
+        }
+
+        >div p {
+            margin-bottom: 10px
+        }
+
+        label {
+            display: block;
+            color: #888;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 11px;
+            margin-bottom: 0;
+        }
+
+        input[type=text] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 7px;
+            border: 1px solid #ccc;
+            border-radius: 3px
+        }
+
+        input[type=radio] {
+            position: relative;
+            top: -2px
+        }
+
+        form label {
+            text-transform: none;
+            color: #555;
+            font-size: 1.4rem;
+            padding: 5px 0;
+            border-radius: 5px
+        }
+
+        form p {
+            margin: 8px 0
+        }
+
+        p.label {
+            text-transform: uppercase;
+            color: #555;
+            font-size: 1.2em
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 1.3em;
+            line-height: 1.2;
+            margin: 5px 20px 15px
+        }
+
+        blockquote.error {
+            color: red
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 12px;
+            color: #555;
+            border: 1px solid #ccc;
+            border-radius: 3px
+        }
+    }
+
+    .action {
+        text-align: center;
+        padding: $spacer-1 $spacer-10;
+        background: #eee;
+
+        button {
+            border: 1px solid #ccc;
+            background: #fff;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin: 0 10px;
+            white-space: nowrap
+        }
+
+        button.btnSubmit,
+        button:hover {
+            border-color: #ba1b1e;
+            color: #ba1b1e
+        }
+
+        button.btnSubmit {
+            display: none
+        }
+    }
+
+    table {
+        border: 1px solid #ccc;
+
+        th {
+            background-color: #15a1b1;
+            color: #fff;
+            text-align: center
+        }
+
+        td {
+            padding: 5px
+        }
+    }
+}

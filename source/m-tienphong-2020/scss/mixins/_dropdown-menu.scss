@@ -1,0 +1,57 @@
+// ====================================
+// Customize scaffolding
+// ====================================
+/*
+* TOC
+*
+* next ~ previous
+*/
+/*> text to speech desktop style*/
+@mixin bm-dropdown-menu {
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid gray($key: "300");
+
+    @if $dark-mode {
+        background-color: theme-color-level(dark, -6);
+    }
+
+    padding: 0;
+
+    &:after,
+    &:before {
+        bottom: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    &:after {
+        border-color: rgba(color($key: "white"), 0);
+        border-bottom-color: color($key: "white");
+
+        @if $dark-mode {
+            border-color: rgba(theme-color-level(light, -6), 0);
+            border-bottom-color: theme-color-level(dark, -6);
+        }
+
+        border-width: 5px;
+        margin-left: 1px;
+    }
+
+    &:before {
+        border-color: rgba($black, 0);
+        border-bottom-color: gray($key: "400");
+
+        @if $dark-mode {
+            border-color: rgba(theme-color-level(dark, -6), 0);
+            border-bottom-color: theme-color-level(light, -6);
+        }
+
+        border-width: 6px;
+        margin-right: -1px;
+    }
+}

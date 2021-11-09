@@ -1,0 +1,38 @@
+// ====================================
+// Customize breadcrumbs
+// ====================================
+/*
+* TOC
+*
+* LOGO + LIVE ICON +
+* --- header
+* --- pin verticle menu
+* --- story timeline
+* --- article action
+* --- user context menu
+* --- user
+* --- btn-toggle
+* --- photoswipte + weather
+* --- login
+* --- soccer
+* --- modal icon
+* --- channel-box
+*/
+// > layout
+@include media-breakpoint-down(ip-6p){
+	.container{
+		// padding-left: 16px;
+		// padding-right: 16px;
+		// max-width: 450px;
+	}
+}
+.container{
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+
+.wrapper{
+	// max-width: 480px;
+	margin: 0 auto;
+}

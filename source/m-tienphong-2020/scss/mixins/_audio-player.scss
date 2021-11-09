@@ -1,0 +1,298 @@
+// ====================================
+// Customize scaffolding
+// ====================================
+/*
+* TOC
+*
+* next ~ previous
+*/
+/*> text to speech desktop style*/
+@mixin audio-player {
+    position: relative;
+    transition: all .15s linear;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .play-button {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        >span {
+            background-color: rgba(color($key: "white"), .9);
+            border: 1px solid rgba($black, .3);
+            display: block;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        i {
+            font-size: 12px;
+            color: gray($key: "700");
+        }
+
+        .fi-play {}
+
+        .fi-pause {}
+
+        &:hover {
+            span {
+                background-color: rgba(color($key: "white"), 1);
+                border: 1px solid rgba($black, .4);
+            }
+
+            i {
+                color: gray($key: "900");
+            }
+        }
+
+        &+span {
+            display: flex;
+        }
+    }
+
+    .mute-wrap {
+        &:hover {
+            .volume-slider {
+                width: 62px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .mute-button {
+        padding: 0 16px 0 8px;
+
+        i {
+            color: gray($key: "700");
+        }
+
+        &:hover {
+            i {
+                color: gray($key: "900");
+            }
+        }
+    }
+
+    .volume-slider {
+        width: 0px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        margin-right: 0px;
+        cursor: pointer;
+        transition: all .15s linear;
+
+        .volume-slider-handle {
+            position: absolute;
+            top: 50%;
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            margin-top: -6px;
+            background-color: gray($key: "600");
+            z-index: 999;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 50%;
+                height: 3px;
+                margin-top: -2px;
+                width: 64px;
+            }
+
+            &:before {
+                left: -64px;
+                background-color: gray($key: "600");
+            }
+
+            &:after {
+                left: 12px;
+                background-color: rgba($black, .1);
+            }
+        }
+
+        &.is-active {
+            margin-right: 10px;
+            width: 62px;
+        }
+    }
+
+    .time-display {
+        width: 75px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        color: gray($key: "700");
+        opacity: 1;
+        transition: all .2s linear;
+
+        .current {
+            width: 30px;
+        }
+
+        .separator {
+            margin-right: 3px;
+        }
+    }
+
+    .progress-bar {
+        position: relative;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        transition: all .2s linear;
+
+        .bg {
+            position: absolute;
+            display: flex;
+            height: 0;
+            top: 0;
+            width: 100%;
+            transition: all .15s linear;
+            border-top: 1px solid rgba($black, .1);
+            @include media-breakpoint-up(sm){
+                border-top-width: 3px;
+            }
+        }
+
+        .fill-recent {
+            position: absolute;
+            display: flex;
+            height: 0px;
+            top: 0;
+            left: 0;
+            border-top-width: 1px;
+            border-top-style: solid;
+            font-size: 0;
+            cursor: pointer;
+            transition: all .15s linear;
+            @include media-breakpoint-up(sm){
+                border-top-width: 3px;
+            }
+        }
+
+        .current_time {
+            position: absolute;
+            right: -7px;
+            top: -5px;
+            width: 7px;
+            height: 7px;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-indent: -999em;
+            transition: all .15s linear;
+            background-color: color($key:"white");
+            box-shadow: 0 0 4px rgba($black, .4)
+        }
+
+        @include media-breakpoint-up(ip-6p) {
+            &:hover {
+
+                .bg,
+                .fill-recent {
+                    border-top-width: 5px;
+                    height: 10px;
+                    padding-top: 15px;
+                    cursor: pointer;
+                }
+
+                .current_time {
+                    display: flex;
+                    top: -8px;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .select-voice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        background-color: rgba(color($key: "white"), .9);
+        border: 1px solid rgba($black, .2);
+        position: relative;
+
+        span {
+            color: gray($key: "700");
+        }
+
+        i {
+            color: gray($key: "700");
+        }
+
+        @include caret(down);
+
+        &:after {
+            position: absolute;
+            top: 10px;
+            right: 8px;
+            opacity: .4;
+        }
+
+        &:hover {
+            border: 1px solid rgba($black, .3);
+        }
+    }
+
+    .voice-board {
+        width: 180px;
+        right: 0px;
+        margin-top: 5px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+        ul {}
+
+        li {
+            height: 44px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            border-top: 1px solid $border-color;
+            cursor: pointer;
+
+            i {
+                margin-right: 10px;
+            }
+
+            >div {}
+
+            &:first-child {
+                border-top: none;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+
+            &:hover,
+            &.is-active {
+                background-color: $gray-100;
+
+                i,
+                span {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

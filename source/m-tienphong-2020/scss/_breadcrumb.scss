@@ -1,0 +1,209 @@
+// ====================================
+// Customize breadcrumbs
+// ====================================
+/*
+* TOC
+*
+* breadcrumb
+*/
+// >  breadcrumb
+.breadcrumb {
+    @include clearfix();
+    height: 30px;
+    white-space: nowrap;
+    overflow-y: scroll;
+    margin-top: $spacer-3;
+    width: 100%;
+
+    .main-cate {
+        display: inline-flex;
+
+        &:before {
+            content: '';
+            width: 5px;
+            height: 18px;
+            position: relative;
+            top: 2px;
+            background-color: $primary;
+        }
+
+        a {
+            height: 25px;
+            @include text-uppercase-1;
+            position: relative;
+            display: flex;
+            padding: $spacer-10 $spacer-3 $spacer-10 $spacer-2;
+            color: $gray-900 !important;
+
+            >* {
+                font-weight: 800;
+                font-size: inherit;
+            }
+        }
+    }
+
+    .cate {
+        display: inline-flex;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 1px;
+            height: 18px;
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            background-color: $gray-500;
+        }
+
+        a {
+            height: 25px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            position: relative;
+            padding: $spacer-10 $spacer-3 $spacer-10 $spacer-2;
+
+            >* {
+                font-size: inherit;
+            }
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .is-active {
+        a {
+            color: $primary;
+        }
+    }
+}
+
+// >  page-title
+.page-title {
+    @include clearfix();
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: $spacer-2;
+    padding-bottom: $spacer-1;
+
+    &:after {
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-top: $spacer-1;
+        top: 2px;
+        background-color: $gray-800;
+    }
+
+    .main-cate {
+        display: inline-flex;
+
+        a {
+            display: inline-flex;
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: $font-family-serif;
+            color: $gray-900 !important;
+
+            >* {
+                font-weight: 800;
+                font-size: inherit;
+            }
+        }
+    }
+}
+
+// >  dark-title
+.dark-title {
+    @include clearfix();
+    display: flex;
+    border-bottom: 3px solid $primary;
+    padding-top: $spacer-2;
+    padding-bottom: $spacer-1;
+    margin-bottom: $spacer-2;
+
+    .main-cate {
+        display: inline-flex;
+
+        a {
+            height: 25px;
+            @include text-uppercase-1;
+            position: relative;
+            display: flex;
+            padding: $spacer-10 $spacer-3 $spacer-10 0;
+            color: $gray-200 !important;
+
+            >* {
+                font-weight: 800;
+                font-size: inherit;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .cate {
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 1px;
+            height: 18px;
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            background-color: $gray-500;
+        }
+
+        a {
+            height: 25px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            position: relative;
+            padding: $spacer-10 $spacer-3 $spacer-10 $spacer-2;
+
+            >* {
+                font-size: inherit;
+                color: $gray-200;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .is-active {
+        a {
+            color: $primary;
+        }
+    }
+}
+
+.topic-title {
+    overflow: hidden;
+    margin-top: $spacer-1;
+    max-height: 28px;
+
+    .item {
+        display: inline-flex;
+
+        a {
+            text-transform: uppercase;
+            font-family: $font-family-serif;
+            padding: $spacer-0 $spacer-2;
+            @include font-style(14, 20, bold);
+            color: $white;
+            display: inline-flex;
+            background-color: $primary;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+// ====================================
+// Customize breadcrumbs
+// ====================================
+
+/*
+* TOC
+*
+* HIDE TOP  ============
+* TILT.JS
+* BACKGROUND VIDEO
+*/
+
+// > HIDE TOP  ============
+#__bs_notify__ {
+    display: none !important;
+}
+
+.demo-icon{
+    .icon{
+        margin-top: 10px;
+        background-color: $gray-300;
+    }
+}
+
+// > BACKGROUND VIDEO
+.video-section {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.video-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.video-section .container {
+    position: relative;
+    z-index: 10;
+}
+
+.video-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    .video-section {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+
+    .video-section video {
+        display: none;
+    }
+}
+
+// > BORDER STORY

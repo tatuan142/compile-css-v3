@@ -1,0 +1,9 @@
+#file macOS tatuan142
+.DS_Store
+**/.DS_Store
+**/._.DS_Store
+package.json
+
+#Files and directories in "node_modules"
+node_modules/
+node_modules.nosync/

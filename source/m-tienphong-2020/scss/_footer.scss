@@ -1,0 +1,195 @@
+// ====================================
+// Story's style
+// ====================================
+/*
+* TOC
+*
+*/
+.site-footer {
+    border-top: 5px solid darken($border-color, 10%);
+    padding-top: $spacer-1;
+    padding-bottom: $spacer-6;
+    margin-top: $spacer-3;
+    font-size: 12px;
+    font-weight: $font-weight-medium;
+
+    .link {
+        display: flex;
+        justify-content: space-between;
+        padding-top: $spacer-0;
+        padding-bottom: $spacer-0;
+        border-bottom: 1px solid darken($border-color, 10%);
+    }
+
+    .relate-site {
+        a {
+            display: inline-flex;
+            margin: 0 $spacer-0;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        .tpo{
+            width: 100px;
+            height: 24px;
+            background: url(../img/logo-web-red.png) left 0 top 0/auto 30px no-repeat;
+        }
+
+        .sv {
+            width: 100px;
+            height: 24px;
+            background: url(../img/sinhvien-logo.png) left 0px top 0px / auto 24px no-repeat;
+        }
+
+        .hht {
+            width: 45px;
+            height: 24px;
+            background: url(../img/hht-online-logo.png) left 0px top 0px / auto 24px no-repeat;
+        }
+        .tamviet{
+            width: 69px;
+            height: 24px;
+            background: url(../img/tamviet-logo-brown.png) left 0px top 0px / auto 24px no-repeat;
+        }
+    }
+
+    .top-social {
+        display: inline-flex;
+        margin-left: $spacer-2;
+        justify-content: flex-end;
+
+        a {
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            margin: 0 $spacer-0;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+            border-radius: 50%;
+            border: 1px solid $border-color;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        i {
+            font-size: 13px;
+            color: $gray-500;
+        }
+    }
+
+    span,
+    p {
+        margin-top: $spacer-0;
+        display: block;
+        color: $gray-600;
+
+        b {
+            color: $gray-900;
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        text-align: center;
+    }
+
+    .footer-info {
+        text-align: center;
+        color: $gray-800;
+    }
+
+    .footer-pin {
+        box-shadow: 0 -2px 4px rgba($black, .1);
+        z-index: 1020;
+        bottom: 0;
+        height: 40px;
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        >button,
+        >a {
+            width: 50px;
+            height: 40px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        i {
+            color: $white;
+        }
+
+        .bars {
+            i {
+                font-size: 20px;
+            }
+
+            &.is-active {
+                background-color: darken($primary, 10%);
+            }
+        }
+
+        .play,
+        .m-character,
+        .phone,
+        .globe,
+        .go-top,
+            {
+            i {
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 13px;
+                border-radius: 50%;
+                background-color: $white;
+                color: $primary;
+            }
+        }
+
+        .text {
+            span {
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 11px;
+                font-weight: bold;
+                text-transform: uppercase;
+                border-radius: 50%;
+                background-color: $white;
+                color: $primary;
+            }
+
+            &.is-active {
+                background-color: darken($primary, 10%);
+            }
+        }
+
+        .play {
+            i {
+                font-size: 10px;
+
+                &:before {
+                    margin-left: 2px;
+                }
+            }
+        }
+
+        .m-character {
+            i {
+                font-style: normal;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

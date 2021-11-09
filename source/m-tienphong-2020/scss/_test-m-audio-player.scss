@@ -1,0 +1,339 @@
+// ====================================
+// Customize scaffolding
+// ====================================
+/*
+* TOC
+*
+
+*/
+/* > root */
+@import "../../../../../bower_components/bootstrap-4.1.2/scss/functions";
+@import "variables";
+@import "mixins/dropdown-menu";
+@import "mixins/audio-player";
+/* > font-awesome*/
+// @import "../../../../../fontawesome-pro-5.11.2-web/scss/fontawesome.scss";
+// @import "../../../../../fontawesome-pro-5.11.2-web/scss/duotone.scss";
+// @import "../../../../../fontawesome-pro-5.11.2-web/scss/light.scss";
+// @import "../../../../../fontawesome-pro-5.11.2-web/scss/regular.scss";
+// @import "../../../../../fontawesome-pro-5.11.2-web/scss/solid.scss";
+// @import "../../../../../fontawesome-pro-5.11.2-web/scss/brands.scss";
+// > bootstrap
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/functions";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/variables";
+@import "../../../../../bower_components/bootstrap-4.1.2/scss/mixins";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/root";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/reboot";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/type";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/images";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/code";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/grid";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/tables";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/forms";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/buttons";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/transitions";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/dropdown";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/button-group";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/input-group";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/custom-forms";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/nav";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/navbar";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/card";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/breadcrumb";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/pagination";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/badge";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/jumbotron";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/alert";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/progress";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/media";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/list-group";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/close";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/modal";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/tooltip";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/popover";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/carousel";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/print";
+// -------
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/align";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/background";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/borders";
+@import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/clearfix";
+
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/display";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/embed";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/flex";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/float";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/position";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/screenreaders";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/shadows";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/sizing";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/spacing";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/text";
+// @import "../../../../../bower_components/bootstrap-4.1.2/scss/utilities/visibility";
+/*> content dùng chung desktop + mobile*/
+// @import "fonts";
+// @import "type";
+// @import "forms";
+// @import "buttons"; // khác nhau về kích thước nút
+// @import "modal";
+// @import "alert";
+// @import "pswp";
+/* > components */
+// @import "icons";
+// @import "search";
+// @import "layout"; // style in criticle
+// $jacket : header-critical, nav-critical;
+// @import "header"; // using jacket
+// @import "navigation";
+// @import "breadcrumbs";
+// @import "pagination";
+// @import "footer";
+// @import "story";
+// $jacket : zone-critical;
+// @import "styles";
+// @import "fyi";
+// @import "../js/   PhotoSwipe/src/scss/main.scss";
+// @import "../js/PhotoSwipe/src/scss/default-skin.scss";
+// @import "article";
+// @import "topic";
+// @import "channel-d.scss";
+// > icon fi-
+@keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+.fi-spin {
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+    display: inline-block;
+}
+
+[class*="fi-"]:before {
+    font-family: "Font Awesome 5 Pro";
+    font-style: normal;
+    font-weight: 300;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    // margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1.5em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    // margin-left: .2em;
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.fi {
+    &-play:before {
+        content: "\f04b";
+    }
+
+    &-pause:before {
+        content: "\f04c";
+    }
+
+    &-volume:before {
+        content: "\f028";
+    }
+
+    &-volume-slash:before {
+        content: "\f2e2";
+    }
+
+    &-microphone-alt:before {
+        content: "\f3c9";
+    }
+
+    &-waveform:before {
+        content: "\f8f1";
+    }
+
+    &-spinner-third:before {
+        content: "\f3f4";
+    }
+}
+
+// > bm-player
+.bm-player {
+    @include audio-player;
+    height: 50px;
+    font-size: 0;
+    background-color: theme-color-level(light, 0);
+
+    @include media-breakpoint-down(ip-6p) {
+        margin: 16px -16px 0 -16px;
+    }
+
+    @include media-breakpoint-up(sm) {
+        margin-top: 16px;
+    }
+
+    .left {}
+
+    .play-button {
+        width: 60px;
+        height: 50px;
+        padding-left: 16px;
+        padding-right: 0;
+        font-size: 14px;
+
+        >span {
+            box-sizing: border-box;
+            width: 36px;
+            height: 36px;
+        }
+
+        .fi-play {
+            margin-left: 3px;
+        }
+
+        .fi-pause {}
+
+        &:hover {
+            .fi-pause {}
+        }
+    }
+
+    .time-display {
+        width: 70px;
+    }
+
+    .progress-bar {
+        background-color: theme-color-level(light, 0);
+        position: relative;
+
+        .fill-recent {
+            @include media-breakpoint-down(ip-6p) {
+                border-color: gray($key: "500");
+            }
+
+            @include media-breakpoint-up(sm) {
+                border-color: #28a5fa;
+            }
+        }
+
+        .current_time {
+            @include media-breakpoint-down(ip-6p) {
+                display: none;
+            }
+        }
+
+        @include media-breakpoint-down(ip-6p) {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0px;
+        }
+
+        @include media-breakpoint-up(sm) {
+            margin-left: 16px;
+            margin-right: 16px;
+            height: 100%;
+
+            .bg,
+            .fill-recent {
+                top: 24px;
+            }
+        }
+
+        &:hover {
+            @include media-breakpoint-up(sm) {
+
+                .bg,
+                .fill-recent {
+                    top: 23px;
+                }
+            }
+        }
+    }
+
+    .volume-slider {
+        display: none;
+    }
+
+    .mute-wrap {}
+
+    .mute-button {
+        i {
+            font-size: 18px;
+        }
+    }
+
+    .right {
+        padding-right: 16px;
+    }
+
+    .select-voice {
+        width: inherit;
+        height: 34px;
+        padding: 0 20px 0 13px;
+
+        @include media-breakpoint-down(ip-5) {
+            padding: 0 8px;
+        }
+
+        span {
+            font-size: 15px;
+        }
+
+        i {
+            margin-right: 10px;
+            font-size: 16px;
+
+            @include media-breakpoint-down(ip-5) {
+                display: none;
+            }
+        }
+
+        &:after {
+            top: 14px;
+        }
+    }
+
+    .voice-board {
+        @include bm-dropdown-menu;
+        top: 5px !important;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        font-weight: normal;
+
+        &:before,
+        &:after {
+            right: 20px;
+        }
+
+        &.show {
+            display: block;
+        }
+
+        ul {}
+    }
+}

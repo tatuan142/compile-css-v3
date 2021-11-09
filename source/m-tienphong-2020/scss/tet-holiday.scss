@@ -1,0 +1,25 @@
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/functions";
+@import "variables";
+@import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/mixins";
+// > OPTIONAL
+// note : add when there no normalize style
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/root";
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/reboot";
+@import "type";
+
+// @import "../../../../old-cms/bower_components/bootstrap-4.1.2/scss/buttons";
+.site-header__body .container{
+    background: url(../img/tet-holiday-mobile.png) left 10px top 10px / 132px 30px no-repeat;
+
+    @media screen and (min-width: 375px) {
+        background: url(../img/tet-holiday-mobile.png) left 16px top 10px / 132px 30px no-repeat;
+    }
+
+    @media screen and (min-width: 414px) {
+        background: url(../img/tet-holiday-mobile.png) left 16px top 10px / 132px 30px no-repeat;
+    }
+}
+
+.site-header__logo {
+    background: transparent;
+}

@@ -1,0 +1,21 @@
+// Font-sizing shortcuts
+
+@mixin font-size ($font-size, $line-height) {
+    /*!*/
+    $new-size: ($font-size / 10);
+    $new-line-height: ($line-height / 10);
+    // font-size: ($font-size + px);
+    font-size: ($new-size + rem);
+    // line-height: ($line-height + px);
+    line-height: ($new-line-height + rem);
+}
+
+// shorthand for font-size / line-height / font-weight :option ;
+@mixin font-style ($font-size, $line-height, $font-weight: default) {
+    @include font-size($font-size, $line-height);
+    @if $font-weight == default {
+        font-weight: 600;
+    }@else {
+        font-weight: $font-weight;
+    }
+}

@@ -1,0 +1,17 @@
+// ====================================
+// Global fonts
+// ====================================
+/*
+* TOC
+*
+* Roboto
+*/
+/* > noto-sans */
+@font-face {
+    font-family: 'noto-serif';
+    src:
+        url('../fonts/Noto_Serif/NotoSerif-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap
+}
